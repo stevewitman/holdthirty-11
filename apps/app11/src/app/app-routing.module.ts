@@ -5,11 +5,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { LoginComponent } from '@nx11/ui-login';
+import { ProjectComponent } from './projects/project/project.component';
 
 const routes: Routes = [
  { path: '', component: LoginComponent },
  { path: 'login', component: LoginComponent},
- { path: 'projects', component: ProjectsComponent},
+ { path: 'projects', component: ProjectsComponent },
+ { path: 'projects/:id', component: ProjectComponent },
  { path: '**', component: PageNotFoundComponent }
 ]
 

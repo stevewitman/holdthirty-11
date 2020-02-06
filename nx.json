@@ -23,6 +23,12 @@
     },
     "ui-login": {
       "tags": []
+    },
+    "core-data": {
+      "tags": []
+    },
+    "ui-notifications": {
+      "tags": []
     }
   }
 }

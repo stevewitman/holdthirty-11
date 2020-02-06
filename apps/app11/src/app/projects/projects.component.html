@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<div class="row">
+  <div class="column">
+    <nx11-projects-list
+      [projects]="projects$ | async"
+      (selected)=selectProject($event)
+      (deleted)=deleteProject($event)
+      >
+    </nx11-projects-list>
+  </div>
+  <div class="column">
+    <nx11-project-detail
+      [project]="selectedProject"
+      [form]="form"
+      (saved)="saveProject($event)"
+      (cancelled)="cancel()">
+    </nx11-project-detail>
+  </div>
+</div>
